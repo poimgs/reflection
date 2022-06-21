@@ -6,7 +6,7 @@ const MoodSlider = () => {
     }
 
     return (
-        <>
+        <section>
             <input
                 id='moodSlider'
                 type='range'
@@ -14,25 +14,25 @@ const MoodSlider = () => {
                 max='100'
                 step='any'
                 defaultValue='50'
-                className='fixed w-3/4 h-2 bottom-16 mx-auto rounded-sm appearance-none bg-white/20 transition'
+                className='w-3/4 h-2 mt-6 rounded-sm appearance-none bg-white/20 transition'
                 style={{ left: '12.5%' }}
                 onChange={handleChange}
             />
-            <label
-                for='moodSlider'
-                className='fixed bottom-8 text-white/60 hover:text-white/100 transition'
-                style={{ left: '12.5%' }}
-            >
-                Peace
-            </label>
-            <label
-                for='moodSlider'
-                className='fixed bottom-8 text-white/60 hover:text-white/100 transition'
-                style={{ left: '85%' }}
-            >
-                Crisis
-            </label>
-        </>
+            <div>
+                <label
+                    for='moodSlider'
+                    className=' text-white/60 hover:text-white/100 transition align-peace'
+                >
+                    Peace
+                </label>
+                <label
+                    for='moodSlider'
+                    className='text-white/60 hover:text-white/100 transition align-crisis'
+                >
+                    Crisis
+                </label>
+            </div>
+        </section>
     )
 }
 

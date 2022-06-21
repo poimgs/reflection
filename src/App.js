@@ -4,11 +4,10 @@ import MoodSlider from './components/MoodSlider';
 
 function App() {
   return (
-    <div className='mt-8'>
-      {/* <Header /> */}
+    <>
       <Input />
       <MoodSlider />
-    </div>
+    </>
   );
 }
 

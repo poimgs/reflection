@@ -1,3 +1,7 @@
+input {
+    margin-left: 12.5%;
+}
+
 input::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -13,4 +17,13 @@ input::-webkit-slider-thumb {
 
 input::-webkit-slider-thumb:hover {
     background-color: rgba(255, 255, 255, 0.8);
+}
+
+.align-peace {
+    margin-left: 12.5%;
+}
+
+.align-crisis {
+    float: right;
+    margin-right: 12.5%;
 }
